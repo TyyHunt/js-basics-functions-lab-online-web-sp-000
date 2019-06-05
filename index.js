@@ -30,7 +30,7 @@ function calculatesFarePrice(start, destination) {
       price = 25
     }
     else {
-      price = (distance * .02) - 8
+      price = (distance - 400) * .02
     }
   }
 return price;
