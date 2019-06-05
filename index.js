@@ -29,4 +29,5 @@ function calculatesFarePrice(start, destination) {
     case age >= 16:
         canWork = true;
 }
+return price;
 }
