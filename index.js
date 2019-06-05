@@ -21,10 +21,10 @@ function calculatesFarePrice(start, destination) {
   let price;
 
   if (distance > 2500) {
-    price = 'sorry cant go that far';
+    price = 'cannot travel that far';
   } else {
     if (distance < 401) {
-      price = 'this ones on us.'
+      price = 0
     }
     else if (distance > 2000) {
       price = 25
