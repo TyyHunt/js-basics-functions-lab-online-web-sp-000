@@ -35,5 +35,3 @@ function calculatesFarePrice(start, destination) {
   }
 return price;
 }
-
-
