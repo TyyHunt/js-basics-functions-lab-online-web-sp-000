@@ -25,9 +25,8 @@ function calculatesFarePrice(start, destination) {
         price = 'sorry we cant do that';
     case distance <= 400:
         price = 0;
-        canEnlist = true;
-    case age >= 16:
-        canWork = true;
+    case 400 < distance < 2000:
+        price = distance * .02 ;
 }
 return price;
 }
