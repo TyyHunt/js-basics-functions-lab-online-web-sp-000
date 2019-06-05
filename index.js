@@ -30,3 +30,17 @@ function calculatesFarePrice(start, destination) {
 }
 return price;
 }
+
+if (distance > 2500) {
+  price = 'sorry cant go that far';
+} else {
+  if (distance < 401) {
+    price = 'this ones on us.'
+  }
+  else if (distance > 2000) {
+    price = 25
+  }
+  else {
+    price = distance * .02 - 8
+  }
+}
