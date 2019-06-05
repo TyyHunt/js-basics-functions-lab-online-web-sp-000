@@ -20,27 +20,20 @@ function calculatesFarePrice(start, destination) {
 
   let price;
 
-  switch(distance) {
-    case distance >= 2500:
-        price = 'sorry we cant do that';
-    case distance <= 400:
-        price = 0;
-    case 400 < distance < 2000:
-        price = distance * .02 ;
-}
+  if (distance > 2500) {
+    price = 'sorry cant go that far';
+  } else {
+    if (distance < 401) {
+      price = 'this ones on us.'
+    }
+    else if (distance > 2000) {
+      price = 25
+    }
+    else {
+      price = distance * .02 - 8
+    }
+  }
 return price;
 }
 
-if (distance > 2500) {
-  price = 'sorry cant go that far';
-} else {
-  if (distance < 401) {
-    price = 'this ones on us.'
-  }
-  else if (distance > 2000) {
-    price = 25
-  }
-  else {
-    price = distance * .02 - 8
-  }
-}
+
