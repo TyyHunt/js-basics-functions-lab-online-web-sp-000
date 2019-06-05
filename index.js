@@ -20,7 +20,7 @@ function calculatesFarePrice(start, destination) {
 
   let price;
 
-  switch (price) {
+  switch(distance) {
     case distance >= 2500:
         price = 'sorry we cant do that';
     case distance <= 400:
