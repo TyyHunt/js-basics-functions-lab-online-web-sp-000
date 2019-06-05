@@ -28,5 +28,5 @@ function calculatesFarePrice(start, destination) {
     case 400 < distance < 2000:
         price = distance * .02 ;
 }
-return distance;
+return price;
 }
