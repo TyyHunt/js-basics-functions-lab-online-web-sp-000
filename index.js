@@ -23,7 +23,7 @@ function calculatesFarePrice(start, destination) {
   switch (distance) {
     case distance >= 2500:
         price = 'sorry we cant do that';
-    case sitance <= 400:
+    case distance <= 400:
         price = 0;
         canEnlist = true;
     case age >= 16:
